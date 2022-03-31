@@ -7,7 +7,7 @@ https://www.insanelymac.com/forum/topic/329704-opcode-emulator-opemu-plug-in-pro
 requires Lilu plugin
 
 #
-Updated source to be compiled using new acidanthera Lilu requirements.
+# Updated source to be compiled using new acidanthera Lilu requirements.
 #
 To Compile
 #
