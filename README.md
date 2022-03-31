@@ -1,4 +1,4 @@
-OpcodeEmulator by Meowthra
+Original OpcodeEmulator Project by Meowthra
 
 Intel Haswell Pentium / Celeron Series Or older processor expansion instruction set Emulation
 
@@ -7,7 +7,7 @@ https://www.insanelymac.com/forum/topic/329704-opcode-emulator-opemu-plug-in-pro
 requires Lilu plugin
 
 #
-Updated sources to new Lilu requirements.
+Updated source to be compiled using new acidanthera Lilu requirements.
 #
 To Compile
 #
@@ -21,11 +21,11 @@ To Compile
 #
 - OpcodeEmulator
 
-`git clone https://github.com/LAbyOne/Opcode-Emu`
+`git clone https://github.com/LAbyOne/_OpcodeEmulator OpcodeEmulator`
 
-`cp -r $HOME/Lilu/build/Debug/Lilu.kext $HOME/Opcode-Emu`
+`cp -r $HOME/Lilu/build/Debug/Lilu.kext $HOME/OpcodeEmulator`
 
-`cp -Rf $HOME/Lilu/MacKernelSDK` $HOME/Opcode-Emu
+`cp -Rf $HOME/Lilu/MacKernelSDK` $HOME/OpcodeEmulator
 
 `xcodebuild -project ./OpcodeEmulator/OpcodeEmulator.xcodeproj -configuration Release clean build ARCHS=x86_64 ONLY_ACTIVE_ARCH=YES`
 #
