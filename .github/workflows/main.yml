@@ -30,13 +30,11 @@ jobs:
            
        - name: build lilu
          run: |
-           xcodebuild -project ./Lilu/Lilu.xcodeproj |
-           -configuration Debug clean build ARCHS=x86_64 ONLY_ACTIVE_ARCH=YES
+           xcodebuild -project ./Lilu/Lilu.xcodeproj -configuration Debug clean build ARCHS=x86_64 ONLY_ACTIVE_ARCH=YES
       
        - name: build opcodeEmulator
          run: |
-           cp -r ./Lilu/build/Debug/Lilu.kext ./OpcodeEmulator &&|
-           cp -Rf ./Lilu/MacKernelSDK ./OpcodeEmulator &&|
-           xcodebuild -project ./OpcodeEmulator/OpcodeEmulator.xcodeproj |
-           -configuration Release clean build ARCHS=x86_64 ONLY_ACTIVE_ARCH=YES
+           cp -r ./Lilu/build/Debug/Lilu.kext ./OpcodeEmulator && |
+           cp -Rf ./Lilu/MacKernelSDK ./OpcodeEmulator && |
+           xcodebuild -project ./OpcodeEmulator/OpcodeEmulator.xcodeproj -configuration Release clean build ARCHS=x86_64 ONLY_ACTIVE_ARCH=YES
            
